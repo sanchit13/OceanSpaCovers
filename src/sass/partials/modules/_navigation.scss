@@ -1,0 +1,45 @@
+nav {
+    background-color: $navigationColor;
+}
+
+.navigationBox {
+    //DISPLAY
+    max-width: 85%;
+    min-height: 80px;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigationBox a {
+    text-decoration: none;
+    font-family: $Montserrat;
+    font-weight: 400;
+    letter-spacing: .2em;
+    color: $backgroundColor;
+    font-size: 1.3em;
+    display: block;
+    padding: 10px;
+    transition: all .4s linear;
+}
+
+.navigationBox a:hover {
+    color: #E0A337;
+}
+
+@media all and (max-width: 1150px){
+    .navigationBox {
+        flex-wrap : wrap;
+        justify-content: none; 
+    }
+    .navigationBox a{
+        text-align: center;
+    }
+    .navigationBox li {
+        flex-basis: 1 1 50%;
+        width: 33.33%;
+    }
+}

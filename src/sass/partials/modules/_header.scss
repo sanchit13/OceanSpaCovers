@@ -1,0 +1,52 @@
+header {
+    @include darkenBackground("../images/hero-image.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 878px;
+}
+
+.headerImage {
+    display: block;
+    width: 25.725694444%;
+    margin: 4% auto;
+}
+
+.textOverlay {
+    text-align: center;
+    width: 76.74258115%;
+    color: #FFF;
+    margin: 4% auto;
+    font-size: 2.5em;
+    font-family: $Montserrat;
+    font-weight: 400;
+}
+
+.productsButton{
+    display: block;
+    margin: 0 auto;
+    width: 12%;
+    background-color: #E0A337;
+    text-align: center;
+    font-family: $Montserrat;
+    font-size: 1.3125em;
+    color: #FFF;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+
+.productsButton:hover{
+    color:#E0A337;
+    background-color: #114059;
+}
+
+@media all and (max-width: 1100px) {
+    .headerImage {
+        width: 35%;
+        margin: 8% auto;
+    }
+    .textOverlay{
+        font-size: 2.1em;
+    }
+}
