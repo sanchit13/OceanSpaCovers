@@ -1,9 +1,12 @@
 $Montserrat: 'Montserrat', sans-serif;
 $Exo2: 'Exo 2', sans-serif;
+$Raleway: 'Raleway', sans-serif;
 
 $backgroundColor : #E6E6E6;
 $navigationColor : rgba(35, 35, 35,0.9);
 $aboutUsColor : #114059;
+$formColor : #B8862E;
+$footerColor : #434141;
 
 @mixin darkenBackground($urlLink) {
     background-image: -webkit-linear-gradient(rgba(0,0,0, 0.3) 0%,rgba(0,0,0, 0.9) 95%),url($urlLink);

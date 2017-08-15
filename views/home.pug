@@ -5,7 +5,10 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
-    
+    script(src="https://use.fontawesome.com/860ff23a23.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0CZ26_NQSjx-vpHGLIGNA0khiAavNcmg&callback=initMap")
+
+
   body
     // ============================================   HEADER + NAVIGATION ============================================
 
@@ -51,5 +54,26 @@ html(lang='en')
           | Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
           | 1.10.32.
     // ============================================   FORM SECTION ============================================
-    section.formSection
+    section(class="formSection" id="contactUs")
+      h1.contactUsHeader CONTACT US
+      include contact.pug
+
     // ============================================   LOCATION SECTION ============================================
+    section.locationSection
+      h1.locationHeader LOCATION
+      .storeInformation
+        .storeInformationList
+          p 
+            span(class="title") Phone Number : 
+          p 
+            span(class="title") Fax : 
+          p 
+            span(class="title") E-Mail: 
+          p 
+            span(class="title") Hours :  
+        .mapLocation(id="map")
+
+
+
+    // ============================================   FOOTER SECTION ============================================
+    include footer.pug

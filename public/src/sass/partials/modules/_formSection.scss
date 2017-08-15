@@ -1,0 +1,78 @@
+.formSection {
+    background-color: $formColor;
+    min-height: 40em;
+}
+
+.contactUsHeader {
+    padding-top: 5%;
+    margin-left: 12%;
+    font-family: $Montserrat;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 2.5em;
+}
+
+.contactForm {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: $Raleway;
+    color: #FFF;
+    min-height: 40em;
+}
+
+.formRow {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.formRow input[type='text'],
+.formRow input[type='email']  {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    width: 100%;
+    padding: 10px;
+    font-size: .75em;
+}
+
+.formRow input[type='text']::-webkit-input-placeholder,
+.formRow input[type='email']::-webkit-input-placeholder,
+.formRow textarea::-webkit-input-placeholder{
+    color: #A9A9A9;
+}
+
+.formRow label {
+    margin-bottom: 10px;
+}
+
+.formRow textarea{
+    resize: none;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    width: 100%;
+    padding: 10px;
+    font-size: .75em;
+    height: 15em;
+}
+
+.submitButton{
+    width: 23%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #FFF;
+    color: $formColor;
+    font-family: $Montserrat;
+    border: none;
+}
+
+@media all and (max-width:900px){
+    .contactForm{
+        width: 60%;
+    }
+    .submitButton{
+        width: 40%;
+    }
+}

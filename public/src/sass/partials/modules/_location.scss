@@ -1,0 +1,35 @@
+.locationHeader {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    font-family: $Montserrat;
+    font-weight: 700;
+    color: #5A5A5A;
+    font-size: 2.5em;
+}
+
+.storeInformation {
+    display: flex;
+    margin-bottom: 5em;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.storeInformationList {
+    width: 50%;
+    margin: 0 auto;
+    color : #404040;
+}
+
+.storeInformationList p {
+    margin-bottom: 1em;
+}
+
+.title{
+    font-family: $Exo2;
+    font-weight: 700;
+}
+
+.mapLocation {
+    width: 50%;
+}

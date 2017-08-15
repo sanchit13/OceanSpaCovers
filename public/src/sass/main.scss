@@ -1,6 +1,7 @@
 // FONTS + CDN's
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 // Variables + Base
 @import "./partials/variables";
@@ -12,3 +13,7 @@
 @import "./partials/modules/header";
 @import "./partials/modules/productPitch";
 @import "./partials/modules/aboutUs";
+@import "./partials/modules/formSection";
+@import "./partials/modules/location";
+//@import "./partials/modules/socialLinks";
+@import "./partials/modules/footer";

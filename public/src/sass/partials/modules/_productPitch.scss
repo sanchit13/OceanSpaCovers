@@ -56,6 +56,12 @@ hr{
     }
 }
 
+@media all and (max-width:900px){
+    .productText{
+        font-size: 1em;
+    }
+}
+
 @media all and (max-width: 550px){
     .productImage{
         width: 60%;

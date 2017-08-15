@@ -1,12 +1,12 @@
 .aboutUs {
     background-color: $aboutUsColor;
-    padding-top: 1.5em;
-    padding-bottom: 2.5em;
+    padding: 2em 0;
 }
 
 .aboutUsHeader{
     margin-top: 3%;
     margin-bottom: 5%;
+    margin-left: 12%;
     font-family: $Montserrat;
     font-weight: 700;
     color: #FFF;
@@ -17,9 +17,14 @@
     font-family: $Exo2;
     font-size: 1.25em;
     color: #E6E6E6;
+    width: 70%;
+    margin: 0 auto; 
+    margin-bottom: 5%;
 }
 
-.wrapper{
-    width: 75%;
-    margin: 0 auto;
+
+@media all and (max-width:900px){
+    .aboutUsText{
+        font-size: 1em;
+    }
 }

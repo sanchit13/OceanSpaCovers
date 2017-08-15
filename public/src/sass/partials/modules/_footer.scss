@@ -1,0 +1,15 @@
+.footerSection{
+    display: block;
+    background-color: $footerColor;
+}
+
+.footerSection p {
+    font-family: $Raleway;
+    color:#F9F9F9;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: .8em;
+    letter-spacing: 0.4em;
+}
