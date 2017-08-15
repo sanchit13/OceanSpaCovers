@@ -1,0 +1,65 @@
+.productsPitch{
+    width: 75%;
+    padding: 10px; 
+    margin: 0 auto;
+}
+
+.productsPitch article{
+    display: flex;
+    align-items: center;
+    margin: 6% auto; 
+}
+
+.productImage{
+    display: block;
+    width: 20%;
+    margin: 0 5%;
+}
+
+.productText{
+    font-family : $Exo2;
+    font-size: 1.25em;
+    width: 80%;
+    color: #1A1A1A;
+}
+
+hr{
+    width: 100%;
+}
+
+.flexOrder{
+    order: 2;
+}
+
+@media all and (max-width: 1250px){
+    .productImage{
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .productsPitch article{
+        flex-direction: column;
+    }
+
+    .productText{
+        width: 80%;
+        margin-bottom: 2em;
+    }
+     
+    .productImage{
+        margin: 5% auto; 
+    }
+    
+    .flexOrder{
+        order: 0;
+    }
+}
+
+@media all and (max-width: 550px){
+    .productImage{
+        width: 60%;
+        margin: 10% auto;
+    }
+
+}

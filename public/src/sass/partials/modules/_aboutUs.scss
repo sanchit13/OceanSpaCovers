@@ -1,0 +1,25 @@
+.aboutUs {
+    background-color: $aboutUsColor;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+.aboutUsHeader{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-family: $Montserrat;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 2.5em;
+}
+
+.aboutUsText{
+    font-family: $Exo2;
+    font-size: 1.25em;
+    color: #E6E6E6;
+}
+
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
