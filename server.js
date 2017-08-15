@@ -17,10 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 /*   ============ ROUTES ============ */
-app.get('/', function (req, res) {
-    res.render('home');
-  });
-
 app.use('/', router);
   
 /*   ============ MAKE IT LIVE ============ */

@@ -1,14 +1,32 @@
 nav
   ul.navigationBox
-    li
-      a(href='#') HOME
-    li
-      a(href='#') WARRANTY
+    if(activeLink == "Home") 
+      li
+        a(href='./home' class="activeLink") HOME
+    else 
+      li
+        a(href='./home') HOME
+
+    if(activeLink == "Warranty") 
+      li
+        a(href='./warranty' class="activeLink") WARRANTY
+    else 
+      li
+        a(href='./warranty') WARRANTY
+
+
     li
       a(href='#') LOCATION
     li
       a(href='#') COLORS
     li
       a(href='#') ORDER
-    li
-      a(href='#contactUs') CONTACT US
+
+    if(activeLink == "contactUs") 
+      li
+        a(href='./home#contactUs' class="activeLink") CONTACT US
+    else 
+      li
+        a(href='./home#contactUs') CONTACT US
+
+

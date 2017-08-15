@@ -30,17 +30,17 @@ nav {
     color: #E0A337;
 }
 
-.hamBurger{
+.hamBurger {
     width: 40px;
     display: none;
 }
 
-@media all and (max-width: 1150px){
+@media all and (max-width: 1150px) {
     .navigationBox {
-        flex-wrap : wrap;
-        justify-content: none; 
+        flex-wrap: wrap;
+        justify-content: none;
     }
-    .navigationBox a{
+    .navigationBox a {
         text-align: center;
     }
     .navigationBox li {
@@ -49,17 +49,20 @@ nav {
     }
 }
 
-@media all and (max-width: 750px){
+@media all and (max-width: 750px) {
     .navigationBox {
-        flex-wrap : wrap;
-        justify-content: none; 
+        flex-wrap: wrap;
+        justify-content: none;
     }
-    .navigationBox a{
+    .navigationBox a {
         text-align: center;
     }
     .navigationBox li {
         flex-basis: 1 1 50%;
         width: 100%;
     }
+}
 
+.activeLink {
+    color:  #54aede!important;
 }
