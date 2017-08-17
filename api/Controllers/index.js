@@ -1,3 +1,4 @@
 module.exports = {
-    ContactSubmitRouter: require('./contactSubmitRouter.js'),
+    ContactSubmitRouter: require('./ContactSubmitRouter.js'),
+    PageNavigationRouter: require("./PageNavigationRouter.js")
   };

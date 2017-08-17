@@ -39,4 +39,4 @@ router.post('/', function (req, res) {
     });
 });
 
-module.exports.router = router;
+module.exports = router;

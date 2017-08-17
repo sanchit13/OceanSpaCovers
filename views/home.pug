@@ -18,7 +18,7 @@ html(lang='en')
         image(src='src/images/Logo-BG.png')
       .textOverlay
         p
-          | EACH OCEAN SPA COVER IS HANDMADE TO PERFECTION. OUR PREMIUM COVERS WILL MEET ALL OF YOUR SPA AND HOT TUB NEEDS.
+          | WE GOT YOU COVERED!
       a.productsButton(href='') PRODUCTS
     // ============================================   PRODUCTS PITCH SECTION ============================================
 
@@ -45,35 +45,37 @@ html(lang='en')
       .wrapper
         h1.aboutUsHeader ABOUT US
         p.aboutUsText
-          | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-          | literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-          | College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-          | and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
-          | Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          | Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-          | Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-          | 1.10.32.
-    // ============================================   FORM SECTION ============================================
-    section(class="formSection" id="contactUs")
-      h1.contactUsHeader CONTACT US
-      include contact.pug
+          | Thank you for visiting Ocean Spa Covers Inc. located in Knoxville, TN. We have been a family
+          | owned business since 1997. Owner Bob Nayee and his wife Bhawna Nayee have dedicated their
+          | lives to making sure each and every handmade spa cover are perfect; from the size fitting
+          | perfect to the seam lining up perfectly. Starting out in Orlando FL, Mr. &amp; Mrs. Nayee started
+          | their company in 1997 with one mission; to make the perfect cover for our customers. Each of
+          | our spa covers are handmade and go through numerous quality inspections in Knoxville, TN.
+          | Our seamstresses are highly qualified in their profession and have been trained by Mrs. Nayee
+          | herself. From custom spa shapes to standard sizes, we can make it all. Give us a call today and
+          | get a free quote! Don’t worry when you choose Ocean Spa Covers Inc. we promise, we got you
+          | COVERED.
+  // ============================================   FORM SECTION ============================================
+  section(class="formSection" id="contactUs")
+    h1.contactUsHeader CONTACT US
+    include contact.pug
 
-    // ============================================   LOCATION SECTION ============================================
-    section.locationSection
-      h1.locationHeader LOCATION
-      .storeInformation
-        .storeInformationList
-          p 
-            span(class="title") Phone Number : 
-          p 
-            span(class="title") Fax : 
-          p 
-            span(class="title") E-Mail: 
-          p 
-            span(class="title") Hours :  
-        .mapLocation(id="map")
+  // ============================================   LOCATION SECTION ============================================
+  section.locationSection
+    h1.locationHeader LOCATION
+    .storeInformation
+      .storeInformationList
+        p 
+          span(class="title") Phone Number : 
+        p 
+          span(class="title") Fax : 
+        p 
+          span(class="title") E-Mail: 
+        p 
+          span(class="title") Hours :  
+      .mapLocation(id="map")
 
 
 
-    // ============================================   FOOTER SECTION ============================================
-    include footer.pug
+  // ============================================   FOOTER SECTION ============================================
+  include footer.pug

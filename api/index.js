@@ -12,30 +12,9 @@ router.use(bodyParser.urlencoded({
 }));
 
 
-/* ====== MOUNTING MAIN ROUTERS ======*/
-router.get('/', function (req, res) {
-    var link = {
-        activeLink: "Home"
-    };
-    res.render('home', link);
-});
-
-router.get('/home', function (req, res) {
-    var link = {
-        activeLink: "Home"
-    };
-    res.render('home', link);
-});
-
-router.get('/warranty', function (req, res) {
-    var link = {
-        activeLink: "Warranty"
-    };
-    res.render('warranty', link);
-});
-
-/* ====== MOUNTING OTHER ROUTERS ======*/
-router.use('/contactSubmit', controllers.ContactSubmitRouter.router);
+/* ====== MOUNTING ROUTERS ======*/
+router.use('/', controllers.PageNavigationRouter);
+router.use('/contactSubmit', controllers.ContactSubmitRouter);
 
 
 module.exports = router;

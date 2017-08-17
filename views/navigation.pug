@@ -14,13 +14,24 @@ nav
       li
         a(href='./warranty') WARRANTY
 
-
     li
       a(href='#') LOCATION
-    li
-      a(href='#') COLORS
-    li
-      a(href='#') ORDER
+
+    if(activeLink == "Colors")
+      li
+        a(href='./colors' class="activeLink") COLORS
+
+    else
+      li
+        a(href='./colors') COLORS
+
+    if(activeLink == "Orders")
+      li
+        a(href='#' class="activeLink") ORDER
+    
+    else 
+       li
+        a(href='#') ORDER
 
     if(activeLink == "contactUs") 
       li

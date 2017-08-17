@@ -1,0 +1,82 @@
+.colorSectionWrapper {
+    display: block;
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.86);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.86);
+    width: 80%;
+    margin: 5% auto;
+    padding: 0 5em;
+    background-color: $backgroundColor;
+}
+
+.colorSectionWrapper h1 {
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    font-family: $Montserrat;
+    font-size: 2em;
+    color: $formColor;
+    font-weight: 700;
+}
+
+.colorsFlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.colorFlexItem{
+  img{
+    width: 100%;
+  }
+  h3{
+      text-align: center;
+      margin-top: 1em;
+      font-size: 1.2em;
+      font-family: $Raleway;
+      color: #1A1A1A;
+  }
+  background-color: #d9d9d9;
+  width: 20%; 
+  margin: 2em 1%;
+  padding: 1em;
+}
+
+
+.colorFlexItemEmpty{
+    width: 20%; 
+    margin: 2em 1%;
+    padding: 1em;
+}
+
+@media all and (max-width: 950px){
+    .colorSectionWrapper{
+        padding: 0 3em;
+    }
+    .colorFlexItem{
+        width: 30%;
+    }
+}
+
+
+@media all and (max-width: 950px){
+    .colorFlexItem{
+        width: 30%;
+        margin: 2em 1.5%;
+    }
+}
+
+@media all and (max-width: 700px){
+    .colorFlexItem{
+        width: 45%;
+        margin: 2em 2%;
+    }
+}
+
+@media all and (max-width: 450px){
+    .colorFlexItem{
+        width: 100%;
+        margin: 2em auto;
+    }
+}

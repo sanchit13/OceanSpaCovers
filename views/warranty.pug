@@ -7,7 +7,43 @@ html(lang='en')
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
 
   body
-    include navigation.pug
-    
-    footer
-      include footer.pug
+    .bodyWrapper
+      include navigation.pug
+      section.warrantySection
+        .warrantySectionWrapper
+          h1 WARRANTY 
+
+          h3 3 Years Limited Warranty : 
+          p
+            | Ocean Spa Covers Inc. warrants the cover to be free from defects in material
+            | and workmanship for a period of three years from date of delivery to the
+            | original consumer.  This warranty terminates upon any transfer of ownership by
+            | the original consumer prior to expiration on the warranty period.
+
+          h3 If defect becomes apparent during the warranty period the following apply : 
+          p
+            | Written notice must be given within 7 days of the time the defect is
+            | discovered.  The original receipt of the cover must accompany the notice. The
+            | consumer is responsible for any costs incurred in returning the cover to our
+            | factory. At its determination, Ocean Spa Covers Inc. will repair any cover, if
+            | upon inspection it is determined to be covered by this warranty. The repaired
+            | cover will be returned to the consumer within 7-10 business days of receiving
+            | the cover (may be less, determination will be upon inspection of cover). The
+            | consumer will be responsible for return shipping expenses.
+
+          h3 This warranty does not cover improper use or any of the following :
+          p
+            | Damage by animals, fire, vandalism, excessive chemical staining, abrasion or
+            | use for the purpose other than that which the cover was designed. Foam core
+            | and center bracing are not warranted. Ordinary wear and tear, delamination
+            | and seam splitting due to improper handling are not considered a defect in
+            | workmanship or material and therefore are not covered under this warranty.
+            | Chafing or wearing holes in cover by dragging on rough surfaces are not
+            | considered a defect and therefore are not covered under this warranty. Torn
+            | handles or tie down straps.
+
+          p.conclusionWarranty  
+            | Do Not Sit, Walk or Lay on your Spa Cover. These Are NOT Safety Covers! Ocean Spa Covers Inc. will not be held responsible for injury or death to any person or damage to any property, however arising.
+      
+      footer
+        include footer.pug
