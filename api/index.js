@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 
 /* ====== GLOBAL MIDDLEWARE ======*/
 router.use(bodyParser.json());
-router.use(bodyParser.urlencoded());
 router.use(bodyParser.urlencoded({
     extended: true
 }));
