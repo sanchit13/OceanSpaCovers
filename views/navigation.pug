@@ -1,43 +1,51 @@
 nav
   ul.navigationBox
-    if(activeLink == "Home") 
-      li
-        a(href='./home' class="activeLink") HOME
-    else 
-      li
-        a(href='./home') HOME
+      if(activeLink == "Home") 
+        li
+          a(href='./home' class="activeLink displayHook miniNavigation") HOME
+      else 
+        li
+          a(href='./home' class="displayHook miniNavigation") HOME
 
-    if(activeLink == "Warranty") 
-      li
-        a(href='./warranty' class="activeLink") WARRANTY
-    else 
-      li
-        a(href='./warranty') WARRANTY
+      if(activeLink == "Warranty") 
+        li
+          a(href='./warranty' class="activeLink displayHook miniNavigation") WARRANTY
+      else 
+        li
+          a(href='./warranty' class="displayHook miniNavigation") WARRANTY
 
-    li
-      a(href='#') LOCATION
+      if(activeLink == "location")
+        li
+          a(href='./home#location' class="activeLink displayHook" miniNavigation) LOCATION
 
-    if(activeLink == "Colors")
-      li
-        a(href='./colors' class="activeLink") COLORS
-
-    else
-      li
-        a(href='./colors') COLORS
-
-    if(activeLink == "Orders")
-      li
-        a(href='#' class="activeLink") ORDER
-    
-    else 
-       li
-        a(href='#') ORDER
-
-    if(activeLink == "contactUs") 
-      li
-        a(href='./home#contactUs' class="activeLink") CONTACT US
-    else 
-      li
-        a(href='./home#contactUs') CONTACT US
+      else
+        li
+          a(href='./home#location' class="displayHook miniNavigation") LOCATION
 
 
+      if(activeLink == "Colors")
+        li
+          a(href='./colors' class="activeLink displayHook miniNavigation") COLORS
+
+      else
+        li
+          a(href='./colors' class="displayHook miniNavigation") COLORS
+
+      if(activeLink == "Orders")
+        li
+          a(href='#' class="activeLink displayHook miniNavigation") ORDER
+      
+      else 
+        li
+          a(href='#' class="displayHook miniNavigation") ORDER
+
+      if(activeLink == "contactUs") 
+        li
+          a(href='./home#contactUs' class="activeLink displayHook miniNavigation") CONTACT US
+      else 
+        li
+          a(href='./home#contactUs' class="displayHook miniNavigation") CONTACT US
+
+      li
+        .hamburgerContainer#hamburgerContainer
+          img(src="src/images/Hamburger.png", alt="Hamburger Menu Toggle" class="hamburgerIcon" id="hamburger" )

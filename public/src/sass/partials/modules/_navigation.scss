@@ -23,17 +23,15 @@ nav {
     font-size: 1em;
     display: block;
     padding: 10px;
-    transition: all .4s linear;
 }
 
+.displayHook{
+    transition: all .4s linear;
+}
 .navigationBox a:hover {
     color: #E0A337;
 }
 
-.hamBurger {
-    width: 40px;
-    display: none;
-}
 
 @media all and (max-width: 1150px) {
     .navigationBox {
@@ -49,20 +47,52 @@ nav {
     }
 }
 
+.hamburgerContainer {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 30px;
+    transition: all .3s linear;
+    visibility: hidden;
+}
+
+.activeLink {
+    color: #54aede!important;
+}
+
 @media all and (max-width: 750px) {
     .navigationBox {
         flex-wrap: wrap;
         justify-content: none;
     }
     .navigationBox a {
+        font-size: .8em;
         text-align: center;
-    }
-    .navigationBox li {
-        flex-basis: 1 1 50%;
-        width: 100%;
+        display: block;
     }
 }
 
-.activeLink {
-    color:  #54aede!important;
+@media all and (max-width: 549px) {
+    .navigationBox {
+        flex-wrap: wrap;
+        justify-content: none;
+        max-width: 95%;
+        flex-direction: column;
+        padding-top: .5em;
+    }
+    .navigationBox a {
+        display: none;
+    }
+    .hamburgerContainer {
+        visibility: visible;
+        display: inline-block;
+    }
+
+
+    .navigationBox li{
+        flex-basis: 1 1 50%;
+        width: 100%;
+        text-align: left; 
+        padding-bottom: .5em; 
+    }
 }

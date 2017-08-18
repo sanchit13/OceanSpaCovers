@@ -66,13 +66,25 @@
     color: $formColor;
     font-family: $Montserrat;
     border: none;
+    transition: all 0.4s linear;
+}
+
+.submitButton:hover{
+    color:$aboutUsColor;
 }
 
 @media all and (max-width:900px){
     .contactForm{
         width: 60%;
+        margin-top: 7%;
     }
     .submitButton{
         width: 40%;
+    }
+}
+
+@media all and (max-width: 450px){
+    .submitButton{
+        width: 60%;
     }
 }
