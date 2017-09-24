@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    title Ocean Spa Covers
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
+
+
+  body
+    .orderWrapper
+      include navigation.pug
+      section.orderSectionWrapper
+        h1 QUOTE
+        .hotTubShapesImage
+            img(src="http://www.hottub.pro/wp-content/uploads/2016/08/Hot-Tub-Shape-Size.jpg")
+
+        form.quoteForm(action='quoteSubmit' method='post' id="quoteForm")
+          .formRow
+            label(for="hotTubType") Hot Tub Type : 
+            select(id='hotTubType' name='hotTubType')
+              option(value="Rectangle") Rectangle
+              option(value="Rectangle") Square
+              option(value="Rectangle") Circle
+              option(value="Rectangle") Cut Corner
+              option(value="Rectangle") Octagon
+              option(value="Rectangle") Two Cut Corner
+              option(value="Rectangle") Hexagon
+              option(value="Rectangle") Round
+              option(value="Rectangle") Round Corner
+              option(value="Rectangle") Elipse
+          .formRow
+            label(for="spaModel") Spa Model/Make : 
+            input(type="text" name="spaModel" id="spaModel" placeholder="Enter The Model/Brand of your Hot Tub")
+          .formRow
+            label(for="hotTubMeasurement") Hot Tub Measurement :
+            select(id="hotTubMeasurement" name="hotTubMeasurement")
+              option(value="A") A
+              option(value="B") B
+              option(value="C") C
+              option(value="D") D
+              option(value="E") E
+              option(value="F") F
+          .formRow
+            label(for="coverColor") Cover Color : 
+            select(id="coverColor" name="coverColor")
+                option(value="Black") Black
+                option(value="Black") Bourbon
+                option(value="Black") Cedar
+                option(value="Black") Charcoal
+                option(value="Black") Dusk
+                option(value="Black") Federal Blue
+                option(value="Black") Green
+                option(value="Black") Horizon Blue
+                option(value="Black") Midnight
+                option(value="Black") Nugget
+                option(value="Black") Oyster
+                option(value="Black") Peacock
+                option(value="Black") Port
+                option(value="Black") Storm Grey
+                option(value="Black") Walnut

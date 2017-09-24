@@ -26,4 +26,11 @@ router.get('/colors', function (req, res) {
     res.render('colors', link);
 });
 
+router.get('/orders', function(req,res){
+   var link = {
+       activeLink: "Orders"
+   };
+   res.render('orders',link);
+});
+
 module.exports = router; 

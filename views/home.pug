@@ -9,21 +9,17 @@ html(lang='en')
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
     
 
-
-
   body
     // ============================================   HEADER + NAVIGATION ============================================
-
     header
       include navigation.pug
       .headerImage
-        image(src='src/images/Logo-BG.png')
+        image(src='src/images/Logo-BG.svg')
       .textOverlay
         p
           | WE GOT YOU COVERED!
       a.productsButton(href='') PRODUCTS
     // ============================================   PRODUCTS PITCH SECTION ============================================
-
     section.productsPitch
       article
         .productImage
@@ -61,7 +57,6 @@ html(lang='en')
   section(class="formSection" id="contactUs")
     h1.contactUsHeader CONTACT US
     include contact.pug
-
   // ============================================   LOCATION SECTION ============================================
   section.locationSection#location
     h1.locationHeader LOCATION
@@ -69,18 +64,24 @@ html(lang='en')
         .storeInformationList
           p 
             span(class="title") Phone Number : 
-            | (518) 334-4868
+            | (865) 651-6500
           p 
             span(class="title") Fax : 
-            | (518) 334-4868
+            | (865) 671-6507
           p 
             span(class="title") E-Mail : 
-            | dhiman.sanchit@gmail.com
+            | shannayee1@gmail.com
           p 
             span(class="title") Hours :  
+            
+          p
+            | Monday - Friday : 9:00am - 4:00pm
+          p 
+            | Saturday: Appointment Only 
+          p 
+            | Sunday: Closed
+
         .mapLocation
           iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.808847927046!2d-84.14141988421491!3d35.90269702540052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c2faa0b26ed55%3A0x82dbdea053fc6553!2s310+Simmons+Rd+m%2C+Knoxville%2C+TN+37922!5e0!3m2!1sen!2sus!4v1502988622262" frameborder="0" style="border:0" allowfullscreen)
-
-
   // ============================================   FOOTER SECTION ============================================
   include footer.pug
