@@ -8,13 +8,11 @@ const router = require("./api/");
 const app = express();
 
 
-
-
 /*   ============ TEMPLATING USING PUG ============ */
 app.set("views", __dirname + "/views");
 app.set('view engine', 'pug');
 app.set('view options', {
-  / layout: false
+   layout: false
 });
 
 /*   ============ STATIC FILES ============ */
