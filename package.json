@@ -25,7 +25,9 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "express-validator": "^4.2.1",
     "nodemailer": "^4.0.1",
+    "owl.carousel": "^2.2.0",
     "pug": "^2.0.0-rc.3",
     "xoauth2": "^1.2.0"
   }

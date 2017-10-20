@@ -4,26 +4,21 @@ const xoauth2 = require("xoauth2");
 const router = require('express').Router();
 
 
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    secure: false,
-    port: 25,
-    auth: {
-        user : "dhiman.sanchit@gmail.com",
-        pass : "dhimansanchit"
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-});
 
 router.post('/', function (req, res) {
+    if(req.body.message == "" || req.body.email == ""){
+        res.send("bad input");
+    }
+
+   else{
     let requestBody = {
         "From " : req.body.name,
         "Email" : req.body.email,
         "Number" : req.body.number,
         "Message" : req.body.message
     };
+
+    
 
     let mailOptions = {
         from: req.body.name + ' &lt;' + req.body.email + '&gt;', // sender address
@@ -36,7 +31,22 @@ router.post('/', function (req, res) {
         if (error) {
             return console.log(error);
         }
-    });
+    }
+);
+res.redirect("/home");}
+});
+
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    secure: false,
+    port: 25,
+    auth: {
+        user : "dhiman.sanchit@gmail.com",
+        pass : "dhimansanchit"
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
 });
 
 module.exports = router;

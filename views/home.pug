@@ -7,37 +7,40 @@ html(lang='en')
     script(src="https://use.fontawesome.com/860ff23a23.js")
     script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
+    link(rel="shortcut icon" href="src/favicon.ico")
+
+
     
 
   body
     // ============================================   HEADER + NAVIGATION ============================================
-    header
-      include navigation.pug
+    include navigation.pug
+    
+    header(class="slickHandle owl-carousel owl-theme")
+    .firstPicture
       .headerImage
         image(src='src/images/Logo-BG.svg')
       .textOverlay
         p
           | WE GOT YOU COVERED!
-      a.productsButton(href='') PRODUCTS
+
+      a.productsButton(href='./orders') GET A QUOTE!  
+
     // ============================================   PRODUCTS PITCH SECTION ============================================
     section.productsPitch
       article
         .productImage
           img(src='src/images/productOne.png')
         p.productText
-          | Each spa cover and hot tub cover is equipped with several added features to ensure strength and durability. There
-          | are two triple-stitched, double-riveted handles for easy removal and storage. Drain grommets are provided
-          | to allow water to escape from inside the skin cover. Two combination heat seal and vinyl protecting skid
-          | pads are incorporated to further protect the cover and minimize heat loss.
+          |  The covers are also equipped with several added features to ensure strength and durability. There are two triple-stitched, double riveted handles for easy removal and storage. Drain grommets are provided to allow water to escape from inside the skin cover. Two combination heat seal and vinyl protecting skid pads are incorporated to further protect the cover and minimize heat loss. This allows you to not only keep heat in, but keep leaves and dirt out allowing you to cut energy costs down. 
+
+
       hr
       article
         .productImage.flexOrder
-          img(src='src/images/productOne.png')
+          img(src='src/images/productTwo.png')
         p.productText
-          | Each spa cover and hot tub cover is equipped with several added features to ensure strength and durability. There
-          | are two triple-stitched, double-riveted handles for easy removal and storage. Drain grommets are provided
-          | to allow water to escape from inside the skin cover. Two combination heat seal and vinyl protecting skid
-          | pads are incorporated to further protect the cover and minimize heat loss.
+          | The hot tub and spa cover skins are made of premium all--weather marine grade vinyl, treated to resist mildew and ultraviolet rays with an “R” value of 15. The Spa cover liner backing is also mildew and chemical resistant. We provide fast delivery for these super lightweight covers.
     // ============================================   ABOUT US SECTION ============================================
     section.aboutUs
       .wrapper
@@ -50,9 +53,11 @@ html(lang='en')
           | their company in 1997 with one mission; to make the perfect cover for our customers. Each of
           | our spa covers are handmade and go through numerous quality inspections in Knoxville, TN.
           | Our seamstresses are highly qualified in their profession and have been trained by Mrs. Nayee
-          | herself. From custom spa shapes to standard sizes, we can make it all. Give us a call today and
-          | get a free quote! Don’t worry when you choose Ocean Spa Covers Inc. we promise, we got you
-          | COVERED.
+          | herself. From custom spa shapes to standard sizes, we can make it all. Each Ocean Spa cover is handmade 
+          | to perfection and several quality control inspections are performed during the manufacturing process 
+          | to guarantee top quality in both materials and workmanship. The Cover is protected by a three-year warranty. 
+          | so give us a call today and get a free quote!
+          | Don’t worry when you choose Ocean Spa Covers Inc. we promise, we got you COVERED.
   // ============================================   FORM SECTION ============================================
   section(class="formSection" id="contactUs")
     h1.contactUsHeader CONTACT US
