@@ -12,8 +12,7 @@ function validateForm(){
         return false;
     }
 
-
-    if($('#message').val().length <= 10){
+    if($('#message').val().length <= 20){
         alert("Please Enter in a longer Message")
         return false;
     }
