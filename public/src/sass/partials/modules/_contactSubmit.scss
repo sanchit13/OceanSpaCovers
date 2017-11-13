@@ -1,0 +1,25 @@
+.contactOnSubmit{
+    background-color: $aboutUsColor;
+}
+
+.contactText{
+    min-height: 51vh;
+    h1{
+        text-align: center;
+        color: $backgroundColor;
+        font-size: 2em;
+        font-family: $Montserrat;
+        font-weight: 700;
+        margin-top: 20%;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    p{
+        color: white;
+        font-family: $Exo2;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

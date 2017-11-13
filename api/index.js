@@ -14,6 +14,7 @@ router.use(expressValidator());
 
 /* ====== MOUNTING ROUTERS ======*/
 router.use('/', controllers.PageNavigationRouter);
+router.use('/quoteSubmit', controllers.QuoteSubmitRouter);
 router.use('/contactSubmit', controllers.ContactSubmitRouter);
 
 

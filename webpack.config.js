@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const Uglify = require("uglifyjs-webpack-plugin");
 
 module.exports = {
     entry: "./public/src/index.js",
@@ -28,11 +29,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false
-            }
-        }),
+        new Uglify(),
         new webpack.optimize.OccurrenceOrderPlugin()
     ]
 }

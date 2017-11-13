@@ -1,20 +1,20 @@
-form.contactUs(action='contactSubmit' method='post' class="contactForm" id="contactForm")
+form.contactUs(action='contactSubmit' method='post' class="contactForm" id="contactForm"  onsubmit="return validateForm()")
   .formRow
     label(for="name") NAME : 
     input(type="text" name="name" id="name" placeholder="Enter Your Name")
 
   .formRow
     label(for="email") E-MAIL : 
-    input(type="text" name="email" id="email" placeholder="Enter Your E-mail")
+    input(type="email" name="email" id="email" placeholder="Enter Your E-mail")
 
   .formRow
     label(for="number") PHONE-NUMBER : 
-    input(type="text" name="number" id="number" placeholder="Enter Your Phone Number")
+    input(type="tel" name="number" id="number" placeholder="Enter Your Phone Number")
 
   .formRow
     label(for="message") MESSAGE : 
     textarea(name="message" id="message" placeholder="Enter Your Message")
 
   .formRow
-    button(form="contactForm" class="submitButton") SUBMIT 
+    button(form="contactForm" class="submitButton" type="submit") SUBMIT 
         i(class="fa fa-paper-plane" aria-hidden="true")

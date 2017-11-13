@@ -1,5 +1,6 @@
 .orderWrapper {
     background-color: $aboutUsColor;
+    height: 100%;
 }
 
 .orderSectionWrapper {
@@ -11,6 +12,7 @@
     margin: 5% auto;
     padding: 0 5em;
     background-color: $backgroundColor;
+    padding-bottom: 2em;
 }
 
 .orderSectionWrapper h1 {
@@ -35,7 +37,7 @@
     margin-top: 5%;
     font-family: $Raleway;
     color: #1A1A1A;
-    min-height: 40em;
+    min-height: 10em;
 }
 
 .quoteForm select{
