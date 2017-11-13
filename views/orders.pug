@@ -4,6 +4,7 @@ html(lang='en')
     title Ocean Spa Covers
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src="https://use.fontawesome.com/860ff23a23.js")
     script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
     link(rel="shortcut icon" href="src/favicon.ico")
@@ -93,8 +94,10 @@ html(lang='en')
             input(type="EMAIL" name="email" id="quoteEmail" placeholder="Enter Your E-mail")
 
           .formRow
-            button(form="quoteForm" class="submitButton" type="submit") Submit Quote!
-            i(class="fa fa-paper-plane" aria-hidden="true")
+            button(form="quoteForm" class="submitButton" type="submit") Submit Quote! 
+              i(class="fa fa-paper-plane" aria-hidden="true")
 
+      footer
+          include footer.pug   
 
     script(type='text/javascript', src="src/clientJs/formValidation.js")

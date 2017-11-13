@@ -1,15 +1,13 @@
 const router = require('express').Router();
 const Airtable = require('airtable');
-
-const API_KEY = "key7hIafCkNuSwsJV";
-const DATABASE_ID = "appPywPTKNvu8N3k5";
+const CONFIG = require("../../config.js")
 
 Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
-    apiKey: 'key7hIafCkNuSwsJV'
+    apiKey: CONFIG.API_KEY
 });
 
-var base = Airtable.base(DATABASE_ID);
+var base = Airtable.base(CONFIG.DATABASE_ID);
 
 router.get('/', function(req, res){
     var stringObj = {

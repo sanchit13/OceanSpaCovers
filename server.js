@@ -2,7 +2,8 @@
 const express = require("express");
 const path = require('path');
 const router = require("./api/");
-var port = 8080;
+const CONFIG = require("./config.js")
+
 
 /*   ============ SET UP OUR WEB APPLICATION ============ */
 const app = express();
@@ -22,6 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 /*   ============ MAKE IT LIVE ============ */
-app.listen(port, function () {
+app.listen(CONFIG.PORT, function () {
   console.log("API is live listening on http://localhost:8080");
 })

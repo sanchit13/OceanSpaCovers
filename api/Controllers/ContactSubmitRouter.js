@@ -2,8 +2,7 @@
 const nodemailer = require('nodemailer');
 const xoauth2 = require("xoauth2");
 const router = require('express').Router();
-var EMAIL_ID = "dhiman.sanchit@gmail.com";
-var EMAIL_PW = "dhimansanchit";
+const CONFIG = require("../../config.js")
 
 
 router.get('/', function (req, res) {
@@ -15,24 +14,22 @@ router.get('/', function (req, res) {
 
 
 router.post('/', function (req, res) {
-
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: "smtpout.secureserver.net",
+        secureConnection: false,
         secure: false,
-        port: 25,
+        port: 80,
+        ignoreTLS: true,
         auth: {
-            user: EMAIL_ID,
-            pass: EMAIL_PW
-        },
-        tls: {
-            rejectUnauthorized: false
-        },
-        from : `${req.body.name} <${req.body.email}>`
+            user: CONFIG.EMAIL_ID,
+            pass: CONFIG.EMAIL_PW
+        }
+    }, {
+        from: `${req.body.name} <${req.body.email}>`
     });
 
     let mailOptions = {
-        from: req.body.email, // sender address
-        to: 'dhiman.sanchit@gmail.com', // list of receivers
+        to: "shan@oceanspacovers.com", // list of receivers
         subject: 'Ocean Spa Covers Contact Form', // Subject line
         text: `This Message is from ${req.body.name} at ${req.body.email} with Phone Number : ${req.body.number} \n Message : ${req.body.message}`,
         replyTo: req.body.email,
@@ -40,13 +37,20 @@ router.post('/', function (req, res) {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            return console.log(error);
+            console.log(error);
+            var stringObj = {
+                dataString: "For Some Reason we couldn't process your request - Please try again!!"
+            };
+            res.status(404).render("formsubmit", stringObj);
+        } else {
+            var stringObj = {
+                dataString: "We have received your contact request!"
+            }
+            res.status(201).render("formsubmit", stringObj);
         }
     });
-    var stringObj = {
-        dataString: "We have received your contact request!"
-    }
-    res.status(201).render("formsubmit", stringObj);
+
+
 });
 
 
