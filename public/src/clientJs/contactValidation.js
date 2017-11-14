@@ -2,8 +2,8 @@ function validateForm(){
     var phoneNumber = /^\d{10}$/; 
     var email = $("#email").val();
 
-    if($('#name').val() == ""){
-        alert("Please Enter in a Name")
+    if($('#name').val().replace(/ /g,'').length <  5){
+        alert("Please Enter in a valid Name")
         return false;
     }
 
@@ -12,7 +12,7 @@ function validateForm(){
         return false;
     }
 
-    if($('#message').val().length <= 20){
+    if($('#message').val().replace(/ /g,'').length <= 20){
         alert("Please Enter in a longer Message")
         return false;
     }

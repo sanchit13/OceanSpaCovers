@@ -23,6 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 /*   ============ MAKE IT LIVE ============ */
-app.listen(CONFIG.PORT, function () {
+app.listen(8080, function () {
   console.log("API is live listening on http://localhost:8080");
 })

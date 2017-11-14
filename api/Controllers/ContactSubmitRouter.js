@@ -14,6 +14,14 @@ router.get('/', function (req, res) {
 
 
 router.post('/', function (req, res) {
+
+    if(req.body.message.length < 15 || req.body.number.length < 9){
+        let stringObj = {
+            dataString: "Oops, you somehow managed to send us bad data!"
+        };
+        res.status(404).render("formsubmit", stringObj);
+    }
+
     var transporter = nodemailer.createTransport({
         host: "smtpout.secureserver.net",
         secureConnection: false,
@@ -34,6 +42,7 @@ router.post('/', function (req, res) {
         text: `This Message is from ${req.body.name} at ${req.body.email} with Phone Number : ${req.body.number} \n Message : ${req.body.message}`,
         replyTo: req.body.email,
     };
+
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
