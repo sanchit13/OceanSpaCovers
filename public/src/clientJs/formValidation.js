@@ -15,7 +15,7 @@ function redisplayMeasurements(){
     let obj = document.getElementById("hotTubShape");
     let selectedOption = obj.options[obj.selectedIndex ].value;
     
-    if(selectedOption == "Square" || selectedOption == "Rectangle"){
+    if(selectedOption == "Rectangle"){
         toggleValues();
         initialVal();
     }
@@ -29,29 +29,22 @@ function redisplayMeasurements(){
         document.getElementById("measurementF").style.display = 'none';
     }
 
-    if(selectedOption == "Cut Corner"){
+    if(selectedOption == "Square One Cut Corner" || selectedOption == "Square Two Cut Corner"){
         toggleValues();
         document.getElementById("measurementF").style.display = 'none';
     }
 
-    if(selectedOption == "Octagon" || selectedOption == "Round Corner"){
+    if(selectedOption == "Octagon" || selectedOption == "Hexagon" || selectedOption == "Rounded Square Corners" || selectedOption == "Square Four Cut Corner"){
         toggleValues();
         document.getElementById("measurementD").style.display = 'none';
         document.getElementById("measurementE").style.display = 'none';
         document.getElementById("measurementF").style.display = 'none';
     }
 
-    if(selectedOption == "Two Cut Corner"){
+    if(selectedOption == "Square Two Cut Corner"){
         toggleValues();
-    }
-
-    if(selectedOption == "Hexagon" || selectedOption == "Elipse"){
-        toggleValues();
-        document.getElementById("measurementE").style.display = 'none';
         document.getElementById("measurementF").style.display = 'none';
     }
-
-
 }
 
 function toggleValues(){
@@ -75,7 +68,7 @@ function validateQuote(){
     var phoneNumber = /^\d{10}$/; 
     
     if(!document.getElementById("quoteNumber").value.match(phoneNumber)){
-        alert("Please Enter in a Valid Number");
+        alert("Please Enter in a Valid Phone Number");
         return false;
     }
 
@@ -86,16 +79,6 @@ function validateQuote(){
 
     if(document.getElementById("quoteName").value == ""){
         alert("Please Enter in a Name");
-        return false;
-    }
-
-    if(document.getElementById("spaModel").value == ""){
-        alert("Please Enter in a Spa Model/Make");
-        return false;
-    }
-    
-    if(document.getElementById("quoteAddress").value == ""){
-        alert("Please Enter in an Address");
         return false;
     }
 }

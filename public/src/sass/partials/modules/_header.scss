@@ -3,16 +3,26 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 700px;
     padding-top: 5em;
 }
 
 .secondPicture{
-    @include darkenBackground("../images/coverPicture.jpg");
+    @include darkenBackground("../images/headerTwo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 700px;
+    padding-top: 5em;
+}
+
+.thirdPicture{
+    @include darkenBackground("../images/headerThree.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding-top: 5em;
 }
 
 .headerImage {
@@ -44,6 +54,7 @@
     padding: 15px 5px;
     text-decoration: none;
     transition: all 0.4s linear;
+    margin-bottom: 4em;
 }
 
 .productsButton:hover {

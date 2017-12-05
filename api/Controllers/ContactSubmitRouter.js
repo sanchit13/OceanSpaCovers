@@ -14,8 +14,8 @@ router.get('/', function (req, res) {
 
 
 router.post('/', function (req, res) {
-
-    if(req.body.message.length < 15 || req.body.number.length < 9){
+  let inputMessage = req.body.message;
+    if(hasNumber(req.body.name) || req.body.message.length < 15 || req.body.number.length < 9 || inputMessage.replace(/ /g, '').length < 10){
         let stringObj = {
             dataString: "Oops, you somehow managed to send us bad data!"
         };
@@ -62,6 +62,9 @@ router.post('/', function (req, res) {
 
 });
 
+function hasNumber(myString) {
+    return /\d/.test(myString);
+  }
 
 
 module.exports = router;

@@ -23,14 +23,13 @@ html(lang='en')
             label(for="hotTubShape") Hot Tub Shape : 
             select(id='hotTubShape' name='hotTubShape' onchange="redisplayMeasurements()")
               option(value="Rectangle") Rectangle
-              option(value="Square") Square
+              option(value="Rounded Square Corners") Rounded Square Corners
+              option(value="Square One Cut Corner") Square With One Cut Corner
+              option(value="Square Two Cut Corner") Square With Two Cut Corner
+              option(value="Square Four Cut Corner") Square With Four Cut Corner
               option(value="Round") Round
-              option(value="Round Corner") Round Corner
-              option(value="Cut Corner") Cut Corner
               option(value="Octagon") Octagon
-              option(value="Two Cut Corner") Two Cut Corner
               option(value="Hexagon") Hexagon
-              option(value="Elipse") Elipse
           .formRow
             label(for="spaModel") Spa Model/Make : 
             input(type="text" name="spaModel" id="spaModel" placeholder="Enter The Model/Brand of your Hot Tub")
@@ -41,14 +40,13 @@ html(lang='en')
                 option(value="Black") Bourbon
                 option(value="Black") Cedar
                 option(value="Black") Charcoal
-                option(value="Black") Dusk
                 option(value="Black") Federal Blue
                 option(value="Black") Green
-                option(value="Black") Horizon Blue
                 option(value="Black") Midnight
                 option(value="Black") Nugget
                 option(value="Black") Oyster
                 option(value="Black") Peacock
+                option(value="Black") Porchment
                 option(value="Black") Port
                 option(value="Black") Storm Grey
                 option(value="Black") Walnut
@@ -84,10 +82,6 @@ html(lang='en')
           .formRow
             label(for="number") Phone Number : 
             input(type="tel" name="number" id="quoteNumber" placeholder="Enter Your Phone Number")
-
-          .formRow
-            label(for="address") Address : 
-            input(type="text" name="address" id="quoteAddress" placeholder="Enter Your Address")
 
           .formRow
             label(for="email") E-mail : 

@@ -21,7 +21,6 @@ router.post('/', function (req, res) {
         "Status": "Order Received",
         "Name": req.body.name,
         "Email": req.body.email,
-        "Address": req.body.address,
         "Number": req.body.number,
         "Spa Model/Make": req.body.spaModel,
         "Color": req.body.coverColor,

@@ -8,23 +8,40 @@ html(lang='en')
     script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
     script(type='text/javascript', src='/dist/bundle.js', charset='utf-8')
     link(rel="shortcut icon" href="src/favicon.ico")
-
-
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css")
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css")
     
-
   body
     // ============================================   HEADER + NAVIGATION ============================================
     include navigation.pug
     
-    header(class="slickHandle owl-carousel owl-theme")
-    .firstPicture
-      .headerImage
-        image(src='src/images/Logo-BG.svg')
-      .textOverlay
-        p
-          | WE GOT YOU COVERED!
+    header(class="slickHandle")
+      .firstPicture
+        .headerImage
+          image(src='src/images/Logo-BG.svg')
+        .textOverlay
+          p
+            | WE GOT YOU COVERED!
 
-      a.productsButton(href='./orders') GET A QUOTE!  
+        a.productsButton(href='./orders') GET A QUOTE!
+
+
+      .secondPicture
+        .headerImage
+          image(src='src/images/Logo-BG.svg')
+        .textOverlay
+          p
+            | Our Products have been serving Knoxville since 1997
+        a.productsButton(href='./orders') GET A QUOTE!
+
+
+      .thirdPicture
+        .headerImage
+          image(src='src/images/Logo-BG.svg')
+        .textOverlay
+          p
+            | Check out our handmade to perfection covers
+        a.productsButton(href='./orders') GET A QUOTE!
 
     // ============================================   PRODUCTS PITCH SECTION ============================================
     section.productsPitch
@@ -75,7 +92,12 @@ html(lang='en')
             | (865) 671-6507
           p 
             span(class="title") E-Mail : 
-            | shannayee1@gmail.com
+            br
+            br
+            | shannayee1@gmail.com 
+            br
+            br
+            | bobatoceanspa@hotmail.com
           p 
             span(class="title") Hours :  
             
@@ -90,4 +112,5 @@ html(lang='en')
           iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.808847927046!2d-84.14141988421491!3d35.90269702540052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c2faa0b26ed55%3A0x82dbdea053fc6553!2s310+Simmons+Rd+m%2C+Knoxville%2C+TN+37922!5e0!3m2!1sen!2sus!4v1502988622262" frameborder="0" style="border:0" allowfullscreen)
   // ============================================   FOOTER SECTION ============================================
   include footer.pug
+  script(type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
   script(type='text/javascript', src="src/clientJs/contactValidation.js")
